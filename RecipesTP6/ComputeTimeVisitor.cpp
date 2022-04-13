@@ -32,11 +32,12 @@ void ComputeTimeVisitor::processIngredient(Ingredient& ingredient)
 {
 	// À compléter: ajouter la durée de préparation de l'ingrédient au temps total de préparation
 
-	int preparationTime = 0;
-	for (auto it = ingredient.begin(); it != ingredient.end(); ++it) 
-	{
-		preparationTime += it->getPreparationTime();
-	}
+	m_preparationTime += ingredient.getDuration();
+	//int preparationTime = 0;
+	//for (auto it = ingredient.begin(); it != ingredient.end(); ++it) 
+	//{
+	//	preparationTime += it->getPreparationTime();
+	//}
 
 
 }
@@ -45,19 +46,20 @@ void ComputeTimeVisitor::processRecipe(Recipe& recipe)
 {
 	// À compléter: itérer sur les ingrédients et appliquer le visiteur à chaque enfant
 	//              itérer sur chaque étape et appliquer le visiteur à chaque étape
+	ComputeTimeVisitor visitor;
 	for (auto ing = recipe.begin(); ing != recipe.end(); ++ing)
 	{
-		ComputeTimeVisitor visitor;
 		ing->accept(visitor);
+	}
+
+	for (auto step = recipe.begin_step(); step != recipe.end_step(); ++step)
+	{
+		step->accept(visitor);
 	}
 }
 
 void ComputeTimeVisitor::processSingleStep(SingleStep& step)
 {
 	// À compléter: ajouter la durée de réalisation de l'étape au temps total de réalisation
-	int time = 0;
-	for (auto it = step.begin(); it != step.end(); ++it)
-	{
-		time += it->getRealizationTime();
-	}
+	m_realizationTime += step.getDuration();
 }
