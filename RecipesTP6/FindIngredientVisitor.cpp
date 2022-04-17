@@ -24,11 +24,7 @@ void FindIngredientVisitor::processCompositeStep(CompositeStep& composite)
 void FindIngredientVisitor::processIngredient(Ingredient& ingredient)
 {
 	// À compléter: vérifier si le nom du produit utilisé comme ingrédient correspond au nom cherché
-	//              si oui, ajouter l'itérateur sur cet ingrédient dans la liste des ingrédients trouvés
-	for (auto ingre = ingredient.begin(); ingre != ingredient.end(); ++ingre)
-	{
-		
-	}
+	//              si oui, ajouter l'itérateur sur cet ingrédient dans la liste des ingrédients trouvés	
 }
 
 void FindIngredientVisitor::processRecipe(Recipe& recipe)

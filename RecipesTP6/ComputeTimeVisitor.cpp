@@ -22,8 +22,7 @@ void ComputeTimeVisitor::processCompositeStep(CompositeStep& composite)
 
 	for (auto comp = composite.begin(); comp != composite.end(); ++comp)
 	{
-		ComputeTimeVisitor visitor;
-		comp->accept(visitor);
+		comp->accept(*this);
 	}
 
 }
@@ -31,30 +30,21 @@ void ComputeTimeVisitor::processCompositeStep(CompositeStep& composite)
 void ComputeTimeVisitor::processIngredient(Ingredient& ingredient)
 {
 	// À compléter: ajouter la durée de préparation de l'ingrédient au temps total de préparation
-
 	m_preparationTime += ingredient.getDuration();
-	//int preparationTime = 0;
-	//for (auto it = ingredient.begin(); it != ingredient.end(); ++it) 
-	//{
-	//	preparationTime += it->getPreparationTime();
-	//}
-
-
 }
 
 void ComputeTimeVisitor::processRecipe(Recipe& recipe)
 {
 	// À compléter: itérer sur les ingrédients et appliquer le visiteur à chaque enfant
 	//              itérer sur chaque étape et appliquer le visiteur à chaque étape
-	ComputeTimeVisitor visitor;
 	for (auto ing = recipe.begin(); ing != recipe.end(); ++ing)
 	{
-		ing->accept(visitor);
+		ing->accept(*this);
 	}
 
 	for (auto step = recipe.begin_step(); step != recipe.end_step(); ++step)
 	{
-		step->accept(visitor);
+		step->accept(*this);
 	}
 }
 
