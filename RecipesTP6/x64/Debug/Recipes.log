@@ -1,9 +1,10 @@
 ﻿  CompositeStep.cpp
-\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\CompositeStep.cpp(9,10): fatal error C1083: Cannot open include file: 'AbsRecipeVisitor.h': No such file or directory
+  ComputeTimeVisitor.cpp
+  FindIngredientVisitor.cpp
   Ingredient.cpp
-\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\Ingredient.cpp(9,10): fatal error C1083: Cannot open include file: 'AbsRecipeVisitor.h': No such file or directory
   Recipe.cpp
-\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\Recipe.cpp(9,10): fatal error C1083: Cannot open include file: 'AbsRecipeVisitor.h': No such file or directory
+  RecipeBook.cpp
+  Recipes.cpp
   SingleStep.cpp
-\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\SingleStep.cpp(9,10): fatal error C1083: Cannot open include file: 'AbsRecipeVisitor.h': No such file or directory
   Generating Code...
+  Recipes.vcxproj -> C:\Users\banna\Documents\teedeeSix\x64\Debug\Recipes.exe

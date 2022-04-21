@@ -149,21 +149,21 @@
     <ClCompile Include="AbsRecipeComponent.cpp" />
     <ClCompile Include="AbsStep.cpp" />
     <ClCompile Include="Catalog.cpp" />
+    <ClCompile Include="Category.cpp" />
+    <ClCompile Include="CompositeStep.cpp" />
     <ClCompile Include="ComputeTimeVisitor.cpp" />
     <ClCompile Include="FindIngredientVisitor.cpp" />
     <ClCompile Include="FormatStrategy.cpp" />
+    <ClCompile Include="Ingredient.cpp" />
     <ClCompile Include="LitteralFormatStrategy.cpp" />
     <ClCompile Include="NumericFormatStrategy.cpp" />
+    <ClCompile Include="Recipe.cpp" />
     <ClCompile Include="RecipeBook.cpp" />
     <ClCompile Include="Recipes.cpp" />
+    <ClCompile Include="SingleStep.cpp" />
     <ClCompile Include="TimeFormater.cpp" />
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\Category.cpp" />
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\CompositeStep.cpp" />
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\Ingredient.cpp" />
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\Recipe.cpp" />
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\SingleStep.cpp" />
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\UnitProduct.cpp" />
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\WeighedProduct.cpp" />
+    <ClCompile Include="UnitProduct.cpp" />
+    <ClCompile Include="WeighedProduct.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbsCatalogComponent.h" />

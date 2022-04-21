@@ -10,6 +10,8 @@
 
 #include "AbsIngredient.h"
 #include "AbsProduct.h"
+#include "AbsRecipeVisitor.h"
+
 
 class Ingredient : public AbsIngredient
 {

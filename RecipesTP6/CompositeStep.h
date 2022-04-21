@@ -9,6 +9,7 @@
 #define EA_18A3D912_AFB1_44eb_87B0_E9A94CE907F3__INCLUDED_
 
 #include "AbsStep.h"
+#include "AbsRecipeVisitor.h"
 
 class CompositeStep : public AbsStep
 {

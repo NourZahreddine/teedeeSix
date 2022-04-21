@@ -10,6 +10,7 @@
 
 #include "AbsIngredient.h"
 #include "CompositeStep.h"
+#include "AbsRecipeVisitor.h"
 
 class Recipe : public AbsIngredient
 {

@@ -57,25 +57,25 @@
     <ClCompile Include="TimeFormater.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\Category.cpp">
+    <ClCompile Include="Category.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\CompositeStep.cpp">
+    <ClCompile Include="CompositeStep.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\Ingredient.cpp">
+    <ClCompile Include="Ingredient.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\Recipe.cpp">
+    <ClCompile Include="Recipe.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\SingleStep.cpp">
+    <ClCompile Include="UnitProduct.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\UnitProduct.cpp">
+    <ClCompile Include="WeighedProduct.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="\\.psf\Home\Documents\GitHub\teepeeFive\Tp5CodeDepart-2\Recipes\WeighedProduct.cpp">
+    <ClCompile Include="SingleStep.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
