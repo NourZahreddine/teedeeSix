@@ -1,10 +1,4 @@
-﻿  CompositeStep.cpp
-  ComputeTimeVisitor.cpp
-  FindIngredientVisitor.cpp
-  Ingredient.cpp
-  Recipe.cpp
-  RecipeBook.cpp
-  Recipes.cpp
-  SingleStep.cpp
+﻿  LitteralFormatStrategy.cpp
+  NumericFormatStrategy.cpp
   Generating Code...
-  Recipes.vcxproj -> C:\Users\banna\Documents\teedeeSix\x64\Debug\Recipes.exe
+  Recipes.vcxproj -> \\Mac\Home\Documents\GitHub\teedeeSix\x64\Debug\Recipes.exe

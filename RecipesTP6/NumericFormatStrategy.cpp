@@ -17,8 +17,7 @@ NumericFormatStrategy::NumericFormatStrategy()
 std::string NumericFormatStrategy::format(int time) const 
 {
 	// À compléter: décomposer la durée et construire une chaine avec en format numérique
-	int day, hour,minute;
-	int i = 60 * 60;
+	int day, hour,minute,i = 60 * 60;
 	day = time / (24 * i);
 	hour = (time % (24 * i)) / (i);
 	minute = (time % (i)) / 60;
