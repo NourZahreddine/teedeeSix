@@ -20,13 +20,12 @@ std::string LitteralFormatStrategy::format(int time) const
 {
 	// À compléter: décomposer la durée et construire une chaine avec en format litéral
 
-	int jour, heure, minute;
-	jour = time / (24 * 60 * 60);
-	time = time % (24 * 60 * 60);
-	heure = time / (60 * 60);
-	time = time % (60 * 60);
-	minute = time / 60;
+	int day, hour, minute;
+	int i = 60 * 60;
+	day = time / (24 * i);
+	hour = (time % (24 * i)) / (i);
+	minute = (time % (i)) / 60;
 	time = time % 60;
-	std::string value = std::to_string(jour) + " jours " + std::to_string(heure) + " heures " + std::to_string(minute) + " minutes " + std::to_string(time) + " secondes ";
+	std::string value = std::to_string(day) + " jours " + std::to_string(hour) + " heures " + std::to_string(minute) + " minutes " + std::to_string(time) + " secondes ";
 	return value;
 }

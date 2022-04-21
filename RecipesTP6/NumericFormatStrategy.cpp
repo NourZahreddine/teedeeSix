@@ -23,6 +23,6 @@ std::string NumericFormatStrategy::format(int time) const
 	hour = (time % (24 * i)) / (i);
 	minute = (time % (i)) / 60;
 	time = time % 60;
-	std::string valeur = std::to_string(day) + ":" + std::to_string(hour)+ ":" + std::to_string(minute) + ":" + std::to_string(time);
-	return valeur;
+	std::string value = std::to_string(day) + ":" + std::to_string(hour)+ ":" + std::to_string(minute) + ":" + std::to_string(time);
+	return value;
 }
