@@ -24,7 +24,10 @@ void FindIngredientVisitor::processCompositeStep(CompositeStep& composite)
 void FindIngredientVisitor::processIngredient(Ingredient& ingredient)
 {
 	// À compléter: vérifier si le nom du produit utilisé comme ingrédient correspond au nom cherché
-	//              si oui, ajouter l'itérateur sur cet ingrédient dans la liste des ingrédients trouvés	
+	//              si oui, ajouter l'itérateur sur cet ingrédient dans la liste des ingrédients trouvés
+
+	if (ingredient.getProduct().getName() == m_searchedName) 
+		m_ingredientsFound.push_back(*m_currentIterator);
 }
 
 void FindIngredientVisitor::processRecipe(Recipe& recipe)
@@ -32,6 +35,13 @@ void FindIngredientVisitor::processRecipe(Recipe& recipe)
 	// À compléter: itérer sur tous les ingrédients de la recette
 	//                   - conserver un pointeur sur l'itérateur de l'ingrédient
 	//                   - appliquer le visiteur sur l'ingrédient
+
+	for (auto ingr = recipe.begin(); ingr != recipe.end(); ++ingr) 
+	{
+		m_currentIterator = &ingr;
+		ingr->accept(*this);
+	}
+
 }
 
 void FindIngredientVisitor::processSingleStep(SingleStep& step)

@@ -21,9 +21,7 @@ void ComputeTimeVisitor::processCompositeStep(CompositeStep& composite)
 	// À compléter: itérer sur les enfants du composite et appliquer le visiteur à chaque enfant
 
 	for (auto comp = composite.begin(); comp != composite.end(); ++comp)
-	{
 		comp->accept(*this);
-	}
 
 }
 
@@ -38,14 +36,10 @@ void ComputeTimeVisitor::processRecipe(Recipe& recipe)
 	// À compléter: itérer sur les ingrédients et appliquer le visiteur à chaque enfant
 	//              itérer sur chaque étape et appliquer le visiteur à chaque étape
 	for (auto ing = recipe.begin(); ing != recipe.end(); ++ing)
-	{
 		ing->accept(*this);
-	}
 
 	for (auto step = recipe.begin_step(); step != recipe.end_step(); ++step)
-	{
 		step->accept(*this);
-	}
 }
 
 void ComputeTimeVisitor::processSingleStep(SingleStep& step)
